@@ -17,7 +17,7 @@ function add(productId, price) {
 async function pay() {
     try{
         const productList = await (await fetch("/api/pay",{
-            method: "post",
+            method: "post", 
             body: JSON.stringify(carrito),
             headers: {
                 "Content-Type": "application/json"
